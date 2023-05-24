@@ -11,9 +11,14 @@ const Contact = () => {
             sint unde quaerat ratione soluta veniam provident adipisci cumque
             eveniet tempore?
           </p>
-          <form className="contact-form">
+          <form
+            className="contact-form"
+            action="https://formspree.io/f/mayzzerz"
+            method="POST"
+          >
             <input
               type="email"
+              name="email"
               className="form-input"
               placeholder="enter email"
             />
