@@ -7,6 +7,9 @@ import Hero from "./Hero";
 import Services from "./Services";
 import Contact from "./Contact";
 import FeaturedProducts from "./FeaturedProducts";
+import Loading from "./Loading";
+import Error from "./Error";
+import Product from "./Products";
 
 
 export {
@@ -19,4 +22,7 @@ export {
     Services,
     Contact,
     FeaturedProducts,
+    Loading,
+    Error,
+    Product
 }
