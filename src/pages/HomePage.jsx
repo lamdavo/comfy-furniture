@@ -1,7 +1,11 @@
-
+import { Hero } from "../components/index";
 
 const HomePage = () => {
-  return <h4>home page</h4>
-}
+  return (
+    <main>
+      <Hero />
+    </main>
+  );
+};
 
-export default HomePage
+export default HomePage;

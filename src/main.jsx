@@ -17,6 +17,7 @@ import {
 } from "./pages/index";
 import { Layout } from "./components/index";
 import Error from "./components/Error.jsx";
+import { ProductsProvider } from "./context/products_context";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -27,7 +28,7 @@ const router = createBrowserRouter(
       <Route path="products" element={<Products />} errorElement={<Error />} />
       <Route path="products/:id" element={<ProductDetail />} />
       <Route path="checkout" element={<Cart />} />
-      <Route path="*" element={<Error />} />
+      <Route path="*" element={<NotFound />} />
     </Route>
   )
 );
@@ -38,6 +39,8 @@ function App() {
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <App />
+    <ProductsProvider>
+      <App />
+    </ProductsProvider>
   </React.StrictMode>
 );

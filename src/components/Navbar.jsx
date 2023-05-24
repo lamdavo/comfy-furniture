@@ -4,8 +4,11 @@ import styled from "styled-components";
 import logo from "../assets/logo.svg";
 import { FaBars } from "react-icons/fa";
 import CartButtons from "./CartButtons";
+import { useProductsContext } from "../context/products_context";
 
 const Navbar = () => {
+  const { openSideBar, isSidebarOpen } = useProductsContext();
+
   return (
     <NavContainer>
       <div className="nav-center">
@@ -23,7 +26,7 @@ const Navbar = () => {
             );
           })}
         </ul>
-        <button type="button" className="nav-toggle">
+        <button type="button" className="nav-toggle" onClick={openSideBar}>
           <FaBars />
         </button>
       </div>
