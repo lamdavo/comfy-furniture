@@ -10,6 +10,12 @@ import FeaturedProducts from "./FeaturedProducts";
 import Loading from "./Loading";
 import Error from "./Error";
 import Product from "./Products";
+import PageHero from "./PageHero";
+import ProductImages from "./ProductImages";
+
+import Stars from "./Stars";
+import AmountButtons from "./AmountsButtons";
+import StripeCheckOut from "./StripeCheckOut";
 
 
 export {
@@ -24,5 +30,10 @@ export {
     FeaturedProducts,
     Loading,
     Error,
-    Product
+    Product,
+    PageHero,
+    ProductImages,
+    Stars,
+    AmountButtons,
+    StripeCheckOut,
 }

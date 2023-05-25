@@ -14,6 +14,7 @@ import {
   Products,
   ProductDetail,
   NotFound,
+  Checkout,
 } from "./pages/index";
 import { Layout } from "./components/index";
 import Error from "./components/Error.jsx";
@@ -27,7 +28,7 @@ const router = createBrowserRouter(
       <Route path="cart" element={<Cart />} />
       <Route path="products" element={<Products />} errorElement={<Error />} />
       <Route path="products/:id" element={<ProductDetail />} />
-      <Route path="checkout" element={<Cart />} />
+      <Route path="checkout" element={<Checkout />} />
       <Route path="*" element={<NotFound />} />
     </Route>
   )
